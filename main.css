@@ -1,0 +1,70 @@
+ nav{
+            background-color:#47bdec;
+        }
+        nav a{
+            display:inline-block; 
+            padding:10px;
+            font-size:20px;
+            color:white;
+            text-decoration:none;
+        }
+        nav a:hover{
+            background-color:blue;
+        }
+.grid{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    /*grid-template-rows: 1fr 1fr 200px 1fr;*/
+    grid-template-areas: 
+    "head head"
+    "logo menu"
+    "modau modau"
+    "hinh giua"
+    ". video1"
+    "footer footer"
+}
+#css{
+    text-align: center;
+    font-style: bold ;
+    font-size: 30;
+
+}
+.head{
+    grid-area: head;
+}
+.logo{
+    grid-area: logo;
+}
+.menu{
+    grid-area: menu;
+    padding-top: 40px;
+}
+.modau{
+    grid-area: modau;
+    text-align: center;
+}
+.hinh{
+    padding-top: 10px;
+    grid-area: hinh;
+}
+#b{
+    padding-top: 10px;
+}
+#c{
+    padding-top: 10px;
+}
+.giua{
+    grid-area: giua;
+}
+.video1{
+    grid-area: video1;
+    text-align: center;
+}
+.footer{
+    background-color: pink;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+
+}
